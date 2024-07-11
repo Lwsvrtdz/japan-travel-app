@@ -6,12 +6,18 @@ This repository contains the code for the technical exam for Bizmates company. T
 
 ### Prerequisites
 
+Before you begin, ensure you have met the following requirements:
+!! Make sure you have API KEY for all third-party APIs that are used here
+- OpenWeather
+- GeoapifyAPI
+- Foursquare
+
 ### Installation
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/bizmates-technical-exam.git
-    cd bizmates-technical-exam
+    git clone https://github.com/your-username/japan-travel-app.git
+    cd japan-travel-app
     ```
 
 2. Install the backend dependencies:
@@ -34,17 +40,12 @@ This repository contains the code for the technical exam for Bizmates company. T
     php artisan key:generate
     ```
 
-6. Run the database migrations:
-    ```sh
-    php artisan migrate
-    ```
-
-7. Build the frontend assets:
+6. Build the frontend assets:
     ```sh
     npm run dev
     ```
 
-8. Start the development server:
+8. Start the development server: (Optional depends on your local setup)
     ```sh
     php artisan serve
     ```
