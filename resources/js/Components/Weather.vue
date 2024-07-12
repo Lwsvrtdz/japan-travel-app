@@ -38,8 +38,10 @@ const { places } = storeToRefs(placeStore);
         <option value="Sapporo">Sapporo</option>
         <option value="Nagoya">Nagoya</option>
       </select>
+      
       <div class="grid">
         <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold text-center mb-6">Current Weather</h2>
           <img
             :src="`https://openweathermap.org/img/wn/${currentWeather.weather.icon}@4x.png`"
             alt="current-weather-icon"
@@ -63,6 +65,7 @@ const { places } = storeToRefs(placeStore);
           </p>
         </div>
       </div>
+      <h2 class="text-2xl font-semibold text-center mb-6">Weather forecasts</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
           v-for="(weather, index) in weathers.list"
@@ -89,7 +92,9 @@ const { places } = storeToRefs(placeStore);
           <p class="text-center">Wind Speed: {{ weather.wind.speed }} m/s</p>
         </div>
       </div>
-
+    
+      <hr class="my-6 border-gray-300" />
+      <h2 class="text-2xl font-semibold text-center mb-6">Tourist spots</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
           v-for="(place, index) in places.places"

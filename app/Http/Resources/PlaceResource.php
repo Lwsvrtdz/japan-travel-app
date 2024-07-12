@@ -15,6 +15,7 @@ class PlaceResource extends JsonResource
 
     public function toArray($request)
     {
+        //dd($this->resource);
         return [
             'places' => $this->transformPlaces($this->resource),
         ];
@@ -51,7 +52,7 @@ class PlaceResource extends JsonResource
                     ],
                     'link' => $place['link'],
                     'location' => [
-                        'address' => $place['location']['address'],
+                        'address' => $place['location']['address'] ?? null,
                         'country' => $place['location']['country'],
                         'formatted_address' => $place['location']['formatted_address'],
                         'locality' => $place['location']['locality'],

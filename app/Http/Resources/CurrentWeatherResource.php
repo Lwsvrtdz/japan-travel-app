@@ -42,7 +42,7 @@ class CurrentWeatherResource extends JsonResource
                 'deg' => $this->resource['wind']['deg'],
             ],
             'rain' => [
-                '1h' => $this->resource['rain']['1h'],
+                '1h' => $this->resource['rain']['1h'] ?? null,
             ],
             'clouds' => [
                 'all' => $this->resource['clouds']['all'],

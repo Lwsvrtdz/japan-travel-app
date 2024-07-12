@@ -67,6 +67,11 @@ The application consists of the following components:
 
 The application fetches weather data from an external API and displays it in a user-friendly format. The data includes current weather, forecast, and related places for the selected city.
 
+### UI/UX Design
+
+The reason for choosing this kind of UI/UX is to utilize the data from the API effectively and to keep it simple for users who will use this as their travel guide.
+It's easier for them to look for current weathers, forecasts and the available tourist spot inside their selected City
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
