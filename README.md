@@ -1,8 +1,12 @@
 # Bizmates Technical Exam
 
-This repository contains the code for the technical exam for Bizmates company. The project is a weather application that fetches and displays weather data for various cities. The application is built using Vue.js for the frontend and Laravel for the backend.
+This repository contains the code for the technical exam for Bizmates company. The project is a weather application that fetches and displays weather data for various cities.
 
-## Setup
+## Tools
+- Laravel 11
+- Vue 3
+- Pinia store management
+- TailwindCSS for styling
 
 ### Prerequisites
 
@@ -11,6 +15,8 @@ Before you begin, ensure you have met the following requirements:
 - OpenWeather
 - GeoapifyAPI
 - Foursquare
+
+
 
 ### Installation
 
@@ -54,6 +60,14 @@ Before you begin, ensure you have met the following requirements:
 
 1. Open your browser and navigate to `http://localhost:8000`.
 2. Select a city from the dropdown to fetch and display the weather data for the selected city.
+
+### Screenshots
+![image](https://github.com/user-attachments/assets/74091e89-9a6e-4e19-a673-9bd87df8b31d)
+--
+![image](https://github.com/user-attachments/assets/acbabddd-95ff-4cc6-97f8-2b1abd2dc4ef)
+
+
+
 
 ## Description
 
