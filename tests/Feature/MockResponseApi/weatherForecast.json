@@ -1,0 +1,56 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 5,
+    "list": [
+        {
+            "dt": 1694239200,
+            "main": {
+                "temp": 28.5,
+                "feels_like": 33.0,
+                "temp_min": 28.0,
+                "temp_max": 29.0,
+                "pressure": 1015,
+                "sea_level": 1015,
+                "grnd_level": 1012,
+                "humidity": 70,
+                "temp_kf": 0.5
+            },
+            "weather": [
+                {
+                    "id": 801,
+                    "main": "Clouds",
+                    "description": "few clouds",
+                    "icon": "02d"
+                }
+            ],
+            "clouds": {
+                "all": 20
+            },
+            "wind": {
+                "speed": 2.5,
+                "deg": 180,
+                "gust": 3.0
+            },
+            "visibility": 10000,
+            "pop": 0.1,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-09-09 06:00:00"
+        }
+    ],
+    "city": {
+        "id": 1850147,
+        "name": "Tokyo",
+        "coord": {
+            "lat": 35.6895,
+            "lon": 139.6917
+        },
+        "country": "JP",
+        "population": 13929286,
+        "timezone": 32400,
+        "sunrise": 1694209454,
+        "sunset": 1694253764
+    }
+}

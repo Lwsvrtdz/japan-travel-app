@@ -2,7 +2,10 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Http\JsonResponse;
 
 class PlaceRequest extends FormRequest
 {
@@ -16,5 +19,19 @@ class PlaceRequest extends FormRequest
         return [
             'city' => ['sometimes', 'string', 'max:255', 'in:Tokyo,Yokohama,Kyoto,Osaka,Sapporo,Nagoya'],
         ];
+    }
+    /**
+     * Handle a failed validation attempt.
+     *
+     * @param  \Illuminate\Contracts\Validation\Validator  $validator
+     * @return void
+     */
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(
+            response()->json([
+                'errors' => $validator->errors(),
+            ], JsonResponse::HTTP_UNPROCESSABLE_ENTITY)
+        );
     }
 }
