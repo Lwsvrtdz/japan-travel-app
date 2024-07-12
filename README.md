@@ -56,27 +56,27 @@ Before you begin, ensure you have met the following requirements:
     php artisan serve
     ```
 
+### Testing
+
+I added a simple testing using PHPUnit. You can run the tests with the following command:
+```
+php artisan test
+```
+
 ### Usage
 
 1. Open your browser and navigate to `http://localhost:8000`.
 2. Select a city from the dropdown to fetch and display the weather data for the selected city.
 
+The application fetches weather data from an external API and displays it in a user-friendly format. The data includes current weather, forecast, and related places for the selected city.
 ### Screenshots
 ![image](https://github.com/user-attachments/assets/74091e89-9a6e-4e19-a673-9bd87df8b31d)
 --
 ![image](https://github.com/user-attachments/assets/acbabddd-95ff-4cc6-97f8-2b1abd2dc4ef)
 
-### Testing
-
-I added a simple testing using PHPUnit. You can run the tests with the following command:
-    ```sh
-    php artisan test
-    ```
-
-
-The application fetches weather data from an external API and displays it in a user-friendly format. The data includes current weather, forecast, and related places for the selected city.
 
 ### UI/UX Design
+
 
 The reason for choosing this kind of UI/UX is to utilize the data from the API effectively and to keep it simple for users who will use this as their travel guide.
 It's easier for them to look for current weathers, forecasts and the available tourist spot inside their selected City
