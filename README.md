@@ -66,18 +66,13 @@ Before you begin, ensure you have met the following requirements:
 --
 ![image](https://github.com/user-attachments/assets/acbabddd-95ff-4cc6-97f8-2b1abd2dc4ef)
 
+### Testing
 
+I added a simple testing using PHPUnit. You can run the tests with the following command:
+    ```sh
+    php artisan test
+    ```
 
-
-## Description
-
-The application consists of the following components:
-
-- **Weather.vue**: The main Vue component that handles the UI for displaying weather data.
-- **useWeatherStore.js**: A Pinia store that manages the state for weather data.
-- **WeatherResource.php**: A Laravel resource that transforms the weather data for the forecast.
-- **CurrentWeatherResource.php**: A Laravel resource that transforms the current weather data.
-- **PlaceResource.php**: A Laravel resource that transforms the place data.
 
 The application fetches weather data from an external API and displays it in a user-friendly format. The data includes current weather, forecast, and related places for the selected city.
 
